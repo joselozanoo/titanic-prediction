@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-    model = joblib.load("modelo.pkl")
+model = joblib.load("modelo.pkl")
     
 # Título
 st.title("Predicción de Supervivencia en el Titanic")
