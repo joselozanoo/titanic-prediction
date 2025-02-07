@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Cargo el modelo previamente entrenado
-model = load_model ('./modelo.pkl')
+model = load_model('./modelo.pkl')
 
 # Título
 st.title("Predicción de Supervivencia en el Titanic")
