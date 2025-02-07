@@ -2,7 +2,6 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-try:
     model = joblib.load("modelo.pkl")
     
 # Título
