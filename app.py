@@ -4,7 +4,7 @@ import pandas as pd
 
 # Intenta cargar el modelo
 try:
-    model = joblib.load("modelo.pkl")
+    model = joblib.load("./modelo.pkl")
     st.success("Modelo cargado correctamente.")
 except Exception as e:
     st.error(f"Error al cargar el modelo: {e}")
