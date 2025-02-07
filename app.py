@@ -4,10 +4,7 @@ import pandas as pd
 
 try:
     model = joblib.load("modelo.pkl")
-    print("Modelo cargado correctamente.")
-except Exception as e:
-    print(f"Error al cargar el modelo: {e}")
-
+    
 # Título
 st.title("Predicción de Supervivencia en el Titanic")
 
