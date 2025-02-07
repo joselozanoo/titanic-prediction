@@ -2,8 +2,11 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-# Cargo el modelo previamente entrenado
-model = joblib.load("modelo.pkl")
+try:
+    model = joblib.load("modelo.pkl")
+    print("Modelo cargado correctamente.")
+except Exception as e:
+    print(f"Error al cargar el modelo: {e}")
 
 # Título
 st.title("Predicción de Supervivencia en el Titanic")
