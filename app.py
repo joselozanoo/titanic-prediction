@@ -2,13 +2,13 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-# Intenta cargar el modelo
+# Cargo el modelo
 try:
     model = joblib.load("./modelo.pkl")
     st.success("Modelo cargado correctamente.")
 except Exception as e:
     st.error(f"Error al cargar el modelo: {e}")
-    model = None  # Evita que la app falle si no se carga el modelo
+    model = None
     
 # Título
 st.title("Predicción de Supervivencia en el Titanic")
